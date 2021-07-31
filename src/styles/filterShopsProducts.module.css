@@ -1,0 +1,127 @@
+.filterCardHeader {
+  background-color: #e3eaf9;
+}
+.filterBTN {
+  color: #061637;
+  font-size: 16px;
+}
+.showAllFilter {
+  font-size: 14px;
+  font-weight: 300;
+}
+.filterBTN:hover {
+  color: #f15a24;
+}
+.filterBTN:hover,
+.filterBTN:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+.filterCard {
+  border: 0;
+  border-radius: 0;
+}
+.filterCardBody {
+  background-color: #f5f8ff;
+}
+.filterCardBody .makeStyles-formControl-14 {
+  margin: 0;
+}
+.handleFilter {
+  display: none;
+  background-color: #f15a24;
+  width: 75px;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: 100;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  font-size: 25px;
+}
+
+.storeName > div {
+  width: 45px;
+}
+.storeName h2 {
+  padding-top: 10px;
+  font-size: 22px;
+}
+.filterApplyBTN {
+  display: block;
+  background-color: #f15a24;
+  border: 0;
+  width: 100%;
+  margin-top: 20px;
+}
+.filterFormGroup:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+.filterFormGroup input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+.filterFormGroup label {
+  position: relative;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
+}
+.filterFormGroup label::before {
+  content: '';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.filterFormGroup input:checked + label::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  width: 8px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.filterFormGroup input:checked + label::before {
+  border: 2px solid #f15a24;
+  background-color: #f15a24;
+}
+.filterFormGroup input:checked + label {
+  color: #f15a24;
+}
+.filterFormGroupEN input:checked + label::after {
+  left: 17px;
+}
+.filterFormGroupAR input:checked + label::after {
+  right: 17px;
+}
+
+@media screen and (max-width: 991px) {
+  .filterBody {
+    display: none;
+  }
+  .handleFilter {
+    display: flex;
+  }
+}

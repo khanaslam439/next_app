@@ -1,0 +1,45 @@
+
+
+.PreLoading{
+    width: 100%;
+    height: 100vh;
+    background-color: #19274C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .LogoContainer{
+    width: 17%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #19274C;
+    /* border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; */
+  }
+  
+  .LogoContainer img{
+    width: 100%;
+  }
+
+  .introfilter{
+    background-color: #19274C;
+    position: fixed ; 
+    width: 100% ; 
+    height: 100%;
+    top: 0 ;
+    z-index: 3 ;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,101 @@
+.footer a {
+  color: #707070;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: #f15a24;
+}
+.footer h5 {
+  color: #f15a24;
+  margin: 12px 0;
+  font-size: 18px;
+}
+.footer a,
+.footer h5 {
+  font-weight: 400;
+}
+.footer h6 a {
+  font-size: 14px;
+}
+.footerStores a {
+  display: inline-block;
+  width: 45%;
+}
+.footerChat {
+  background-color: #28af3136;
+  width: fit-content;
+  cursor: pointer;
+}
+.footerChatImg {
+  width: 45px;
+}
+
+.footerChatcontent h5 {
+  color: #28af31;
+}
+.socialIcons a {
+  width: 45px;
+  display: inline-block;
+}
+.websiteLinks {
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+.websiteLinks a {
+  display: inline-block;
+  color: #061637;
+  font-size: 15px;
+}
+.footerCopyright {
+  background: linear-gradient(to bottom, #ff7247, #f15a24);
+}
+.footer_login_section {
+  display: flex;
+  flex-direction: column;
+}
+.footer_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 30px;
+}
+.footer_links > a {
+  color: #171717;
+}
+.footer_links > a:hover {
+  color: #f15a24;
+}
+.footer_login_section > div:last-child {
+  background: linear-gradient(to bottom, #ff7247, #f15a24);
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .websiteLinks {
+    border-top: 0;
+    text-align: justify;
+  }
+  .websiteLinks a {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 575px) {
+  .footer_links {
+    gap: 20px;
+  }
+  .footerStores {
+    display: flex;
+    align-items: center;
+  }
+  .footerStores > div {
+    width: 100%;
+    margin-bottom: 0 !important;
+    text-align: center !important;
+  }
+  .footerStores > div a {
+    width: 75%;
+  }
+}

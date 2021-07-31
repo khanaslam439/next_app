@@ -1,0 +1,52 @@
+.filterTitle {
+  background-color: #e3eaf9;
+}
+
+.ant-collapse-header {
+  text-align: right !important;
+}
+.ant-radio-checked .ant-radio-inner {
+  border-color: #f15a24;
+}
+.ant-radio-inner::after {
+  background-color: #f15a24 !important;
+}
+.ant-radio-inner {
+  border-radius: 0 !important;
+}
+.filterAttrAr {
+  text-align: right;
+}
+
+.filterAttrEn {
+  text-align: left;
+}
+.ant-radio-group {
+  width: 100%;
+}
+.searchBtn {
+  display: block;
+  margin: 12px auto;
+  padding: 4px 20px;
+  border: none;
+  border-radius: 14px;
+  color: #fff;
+  background: #0a1b40;
+  cursor: pointer;
+}
+.SmallScreenFilterDiv {
+  cursor: pointer;
+  position: fixed;
+  bottom: 10%;
+  display: none;
+}
+.ant-collapse-content{
+  max-height: 300px !important;
+  overflow: scroll !important;
+}
+
+@media all and (max-width: 991px) {
+  .SmallScreenFilterDiv {
+    display: block;
+  }
+}

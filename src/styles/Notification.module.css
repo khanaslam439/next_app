@@ -1,0 +1,100 @@
+.arPath_container,
+.iconar,
+.titlear,
+.textar,
+.statusar {
+  text-align: right;
+}
+.enPath_container,
+.iconen,
+.titleen,
+.texten,
+.statusen {
+  text-align: left;
+}
+.arPath_container,
+.enPath_container {
+  background-color: #dde5f6;
+  border-radius: 3px;
+  color: #061637;
+  width: fit-content;
+  padding: 5px 15px;
+  font-size: 17px;
+}
+.arcontent_container,
+.encontent_container {
+  background-color: #ffffff;
+  border-radius: 7px;
+  color: #061637;
+  width: 100%;
+  padding: 5px 15px;
+}
+
+.main_notification {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.datear,
+.dateen {
+  color: #9ea4af;
+  font-size: small;
+}
+.datear {
+  text-align: left !important;
+}
+.dateen {
+  text-align: right !important;
+}
+.iconen,
+.iconar {
+  width: 40px;
+  height: 40px;
+  background-color: #f5f8ff;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+}
+.iconen img,
+.iconar img {
+  width: 30px;
+  height: auto;
+}
+.titlear,
+.titleen,
+.textar,
+.texten {
+  color: #061637;
+}
+.textar span {
+  width: 90%;
+  margin: auto;
+}
+.copyIcon_container {
+  background-color: #e7ecf6;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.details_btn {
+  background-color: #f15a24 !important;
+  color: #ffffff;
+  border-color: #f15a24 !important;
+}
+.codetextArea {
+  border: none !important;
+  resize: none !important;
+}
+.codetextArea:focus {
+  outline: 0 !important;
+  resize: none !important;
+}
+.count_container {
+  background-color: #f15a24;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 2px 15px 3px;
+}
+.img__container > img {
+  max-width: 100%;
+}

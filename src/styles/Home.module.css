@@ -1,0 +1,241 @@
+.home_container {
+  padding-top: 27px;
+  position: relative;
+}
+.banner {
+  width: 100%;
+  max-height: 170px;
+  padding-bottom: 23px;
+}
+
+.main_home {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  /* background-color: #0e4ddf; */
+  background-color: #e3eaf9;
+  /* background-color: #f5f8ff; */
+}
+
+.arTextPath {
+  text-align: right;
+  background-color: #dde5f6;
+  display: flex;
+  width: max-content;
+  padding: 11px 14px;
+  border-radius: 10px;
+}
+.enTextPath {
+  text-align: left;
+  background-color: #dde5f6;
+  display: flex;
+  width: max-content;
+  padding: 11px 14px;
+  border-radius: 10px;
+}
+.arTextPath p,
+.enTextPath p {
+  margin: 0;
+  font-size: 14px;
+  color: #061637;
+  font-family: "Montserrat";
+}
+
+.todayDeals {
+  background-color: #28af31;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.shopOffers {
+  background-color: #008cd3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.askShops {
+  background-color: #f15a24;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.flex_end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cityCard {
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cityCard .imgPinDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 22px; */
+}
+
+.cityCard .text {
+  text-align: center;
+  padding: 9px 0;
+}
+
+.marketCard {
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.carousel .thumbs-wrapper {
+  display: none !important;
+}
+.infoIcon {
+  position: absolute;
+  top: 7px;
+  left: 12%;
+  z-index: 99;
+  color: #0a1b40;
+  cursor: pointer;
+  font-size: 20px;
+}
+.marketCard .imgPinDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 195px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.marketCard .imgPinDiv img {
+  width: 100%;
+  height: 100%;
+}
+.marketCard .text {
+  text-align: center;
+  padding: 15px 0;
+}
+.padding_50 {
+  padding-top: 50px;
+}
+.addImg img {
+  width: 100%;
+  max-height: 370px;
+}
+.downloadSection {
+  background-image: url("../Assets/Images/phonesBG2.png");
+  text-align: right;
+  padding-top: 100px;
+  /* padding-bottom: 240px; */
+  text-align: right;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.downloadSection .text1 {
+  font-size: 18px;
+  width: 45%;
+  line-height: 38px;
+  color: #171717;
+}
+.downloadSection .text2 {
+  margin: 24px 0;
+  color: #f15a24;
+  font-size: 17px;
+}
+.downloadSection .seperate {
+  width: 285px;
+  height: 3px;
+  background-color: #e8e8e8;
+}
+.downloadSection .flex_align {
+  display: flex;
+  align-items: center;
+}
+.downloadSection .downloadLink {
+  margin: 0 10px;
+  width: max-content;
+}
+.downloadSectionSmallScreen {
+  display: none;
+  background-image: url("../Assets/Images/phonesBg.png");
+  text-align: center !important;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: right;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.downloadSectionSmallScreen .text1 {
+  font-size: 18px;
+  line-height: 38px;
+  color: #171717;
+  text-align: center;
+  margin: 0 auto;
+}
+.downloadSectionSmallScreen .text2 {
+  margin: 24px 0;
+  color: #f15a24;
+  font-size: 17px;
+}
+.downloadSectionSmallScreen .seperate {
+  width: 285px;
+  height: 3px;
+  margin: 19px auto;
+  background-color: #e8e8e8;
+}
+.downloadSectionSmallScreen .flex_align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downloadSectionSmallScreen .downloadLink {
+  margin: 0 10px;
+  width: max-content;
+}
+.scrollbarWidth {
+  max-height: 400px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbarWidth::-webkit-scrollbar {
+  display: none;
+}
+
+@media all and (max-width: 991px) {
+  .askShops,
+  .shopOffers,
+  .todayDeals {
+    text-align: center;
+    padding: 8px;
+  }
+  .todayDeals {
+    padding: 8px 6px;
+  }
+  .arTextPath,
+  .enTextPath {
+    display: none;
+  }
+  .downloadSectionSmallScreen {
+    display: block;
+  }
+  .home_filter_content,
+  .downloadSection {
+    display: none;
+  }
+}

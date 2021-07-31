@@ -1,0 +1,25 @@
+.signup_section {
+  background-color: #f5f8ff;
+  min-height: calc(100vh - 104px);
+}
+.signup_container {
+  background-color: #fff;
+  margin: 40px 0;
+  padding: 20px 20px;
+  justify-content: center;
+}
+.signup_container .logo_container {
+  height: 130px;
+  text-align: center;
+}
+.signup_container > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.acitve_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}

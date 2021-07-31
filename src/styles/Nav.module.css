@@ -1,0 +1,118 @@
+.nav_container {
+  background-color: #dde5f6;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  margin-top: 90px;
+}
+.nav_container a,
+.nav_container a:hover {
+  color: #000;
+}
+.nav_container > span {
+  cursor: pointer;
+}
+.dropdown_container {
+  position: relative;
+}
+.dropdown_link {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  gap: 5px;
+  font-size: 14px;
+}
+.dropdown_link > span {
+  cursor: pointer;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.dropdown_link > i {
+  cursor: pointer;
+}
+.dropdown_container:hover .district_dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.district_dropdown {
+  display: none;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 100%;
+  min-width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* .show_district {
+  
+} */
+
+.dictrict_link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #171717;
+  width: 100%;
+}
+.dictrict_link > span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* .dropdown_container:hover .district_dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+.dictrict_link_wrapper {
+  width: 100%;
+  padding: 6px 10px;
+}
+.dictrict_link_wrapper > .region_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.region_content > * {
+  cursor: pointer;
+}
+.markets_dropdown_container_ar,
+.markets_dropdown_container_en {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 15px 15px;
+  width: 100%;
+  /* min-height: 100%; */
+}
+.markets_dropdown_container_ar {
+  right: 100%;
+  border-radius: 8px 0px 0 8px;
+}
+.markets_dropdown_container_en {
+  left: 100%;
+}
+.markets_dropdown_container_ar > a,
+.markets_dropdown_container_en > a {
+  margin-bottom: 8px;
+  text-align: start;
+}
+.show_markets {
+  display: flex;
+  flex-direction: column;
+}
+.dictrict_link_wrapper:hover .markets_dropdown_container_ar,
+.dictrict_link_wrapper:hover .markets_dropdown_container_en {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .nav_container {
+    display: none;
+  }
+}

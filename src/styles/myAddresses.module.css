@@ -1,0 +1,116 @@
+.addNewAddress {
+  background-color: #f15a243e;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.addNewAddress i {
+  background-color: #f15a24;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+.addNewAddress a {
+  color: #f15a24;
+}
+.addressesList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e1e5eb;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.addressInfo {
+  display: flex;
+  align-items: flex-start;
+}
+.addressIcon i {
+  color: #f15a24;
+  font-size: 25px;
+  margin-top: 5px;
+}
+.addressName h5 {
+  font-weight: 400;
+  font-size: 18px;
+}
+.addressName h5:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+.addressOptions button {
+  width: 90px;
+  border-radius: 50px;
+  background-color: #28af31;
+  border: 1px solid transparent;
+  font-size: 14px;
+}
+.addressOptions button a {
+  color: #fff;
+}
+.addressOptions button.deleteBTN {
+  background-color: #f5f8ff;
+  border-color: #e1e5eb;
+  color: #626d81;
+}
+.addressOptions button:hover,
+.addressOptions button:focus,
+.addressOptions button:active {
+  background-color: #28af31 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+.addressOptions button.deleteBTN:hover,
+.addressOptions button.deleteBTN:active,
+.addressOptions button.deleteBTN:focus {
+  background-color: #f5f8ff !important;
+  border-color: #e1e5eb !important;
+  color: #626d81 !important;
+}
+.addAddressBox {
+  background-color: #fff;
+  border: 2px solid #E1E7F3;
+  border-radius: 3px;
+  padding: 20px 30px;
+}
+.addAddressBox label {
+  color: #061637;
+  font-size: 15px;
+}
+.addAddressBox input, .addAddressBox select, .addAddressBox input:focus, .addAddressBox select:focus {
+  border: 0;
+  border-bottom: 1px solid #DDDDDD;
+  border-radius: 0;
+  color: #8F8F8F;
+  box-shadow: none!important;
+  outline: 0!important;
+}
+.addAddressBox small {
+  color: #ff4b5a;
+}
+.saveFormBTN, .saveFormBTN:active, .saveFormBTN:hover, .saveFormBTN:focus {
+  background: linear-gradient(to bottom, #061637, #1b356b);
+  outline: none!important;
+  box-shadow: none!important;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .addressesList {
+    display: block;
+  }
+  .addressOptions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .addressOptions button {
+    margin: 0 10px;
+  }
+  .addNewAddress {
+    margin: 20px auto;
+  }
+}

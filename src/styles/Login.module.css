@@ -1,0 +1,82 @@
+.login_section {
+  background-color: #f5f8ff;
+  min-height: calc(100vh - 104px);
+}
+.login_container {
+  background-color: #fff;
+  margin: 40px 0;
+  padding: 20px 20px;
+  justify-content: center;
+}
+.login_container .logo_container {
+  height: 130px;
+  text-align: center;
+}
+.login_container > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.forget_link {
+  text-align: center;
+  color: #ff7247;
+  position: relative;
+  padding-bottom: 10px;
+}
+.forget_link:hover {
+  color: #ff7247;
+}
+.forget_link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  right: 15%;
+  height: 2px;
+  background-color: #eee;
+}
+
+.newRegister {
+  width: 80%;
+  background: linear-gradient(to bottom, #061637, #1b356b);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.newRegister:hover {
+  color: #fff;
+}
+
+.fb_login > span {
+  width: 100%;
+}
+
+.facebook_btn,
+.google_btn {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  background-color: #f5f8ff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.facebook_btn > svg {
+  height: 20px;
+}
+
+.go_login {
+}
+
+.google_btn {
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f8ff !important;
+  box-shadow: none !important;
+}
+.google_btn > div {
+  background: none !important;
+}

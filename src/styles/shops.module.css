@@ -1,0 +1,57 @@
+.shopCard {
+  cursor: pointer;
+}
+.imgNameShop {
+  width: calc(100% - 110px);
+  overflow: hidden;
+}
+.shopCardBTN .followingBtn {
+  min-width: 108px;
+}
+.shopCardBTN .followBtn {
+  min-width: 82px;
+}
+.shopCardBTN span {
+  font-size: 14px;
+}
+.logoShop {
+  width: 55px;
+  text-align: center;
+}
+.nameShop {
+  width: calc(100% - 60px);
+}
+.nameShop h5 {
+  font-size: 16px;
+  color: #061637;
+  font-weight: 400;
+}
+.nameShop h6 {
+  font-size: 14px;
+  color: #9ea4af;
+  font-weight: 400;
+}
+.nameShop span {
+  font-size: 15px;
+  color: #f15a24;
+}
+
+.followBtn {
+  font-size: 14px;
+  background-color: #f15a24;
+  text-align: center;
+}
+.followingBtn {
+  background-color: #f15a243e;
+  text-align: center;
+  color: #f15a24;
+}
+
+@media screen and (max-width: 767px) {
+  .shopCard {
+    display: block !important;
+  }
+  .followBtn {
+    margin-top: 10px;
+  }
+}

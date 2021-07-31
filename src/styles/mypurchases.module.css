@@ -1,0 +1,107 @@
+.orderCard {
+  padding: 16px 12px;
+  border-radius: 6px;
+  border: 2px solid #e1e7f3;
+}
+.orderInfo,
+.orderState {
+  cursor: pointer;
+}
+.orderState > div:first-of-type {
+  margin-bottom: 15px;
+}
+.orderCard .orderInfo h5 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.orderCard .orderInfo h5:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.cancelOrderBTN {
+  border-radius: 50px;
+  font-size: 14px;
+  min-width: 90px;
+  background-image: linear-gradient(to right, #061637, #1b356b);
+  font-weight: 400;
+  cursor: pointer;
+}
+.orderState {
+  font-size: 14px;
+}
+.orderState > div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.orderStateIcon i {
+  margin: auto;
+  border-width: 1px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 15px;
+  background-color: #c9d3e8;
+  position: relative;
+  z-index: 10;
+  color: transparent;
+  text-align: center;
+}
+.orderStateIcon:not(:last-child)::after,
+.orderStateIcon:not(:last-child)::before {
+  content: '';
+  width: 100%;
+  border-bottom: 2px solid #b9c7e1;
+  position: absolute;
+  top: 50%;
+}
+.orderStateText {
+  color: #9ea4af;
+}
+
+/* Waiting State */
+.waitingState .orderStateText:first-of-type {
+  color: #f15a24;
+}
+.waitingState .orderStateIcon:first-of-type i {
+  background-color: #f15a24;
+  color: #fff;
+}
+
+/* Charging State */
+.chargingState .orderStateText:not(:last-child) {
+  color: #f15a24;
+}
+.chargingState .orderStateIcon:not(:last-child) i {
+  background-color: #f15a24;
+  color: #fff;
+}
+.chargingState .orderStateIcon:first-of-type::after {
+  border-color: #f15a24;
+}
+
+/* Delivered State */
+.deliveredState .orderStateText {
+  color: #f15a24;
+}
+.deliveredState .orderStateIcon i {
+  background-color: #f15a24;
+  color: #fff;
+}
+.deliveredState .orderStateIcon::after,
+.deliveredState .orderStateIcon::before {
+  border-color: #f15a24;
+}
+
+/* Canceled State */
+.canceledState .orderStateText:last-of-type {
+  color: #626d81;
+}
+.canceledState .orderStateIcon:last-of-type i {
+  background-color: #626d81;
+  color: #fff;
+}
+.canceledState .orderStateIcon:nth-child(2):after {
+  border-color: #626d81;
+}

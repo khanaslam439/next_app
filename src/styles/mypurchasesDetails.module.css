@@ -1,0 +1,62 @@
+.orderInfo > div {
+  border: 2px solid #e1e7f3;
+}
+.orderDetails {
+    display: flex;
+    justify-content: space-between;
+}
+.orderDetails h6 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.orderInfo .cancelOrderBTN {
+  border-radius: 50px;
+  min-width: 110px;
+  background-image: linear-gradient(to right, #061637, #1b356b);
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 14px;
+}
+.totalAmount p {
+  font-size: 14px;
+}
+.totalAmount .price {
+    font-size: 28px;
+}
+.paymentWay img {
+  width: 30px;
+}
+.storeName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DCE2F2;
+}
+.storeName .chat {
+  background-color: #28af31;
+  cursor: pointer;
+}
+.orderProductCard {
+  border: 2px solid #e1e7f3;
+}
+.orderProductCardImg {
+  width: 80px;
+}
+.orderProductCardInfo {
+  width: 70%
+}
+.orderProductCardInfo h5 {
+  font-size: 16px;
+}
+.orderProductCardInfo p {
+  font-size: 14px;
+}
+.orderProductCardInfo p:not(:last-of-type) {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 575px) {
+  .orderDetails {
+    display: block;
+  }
+}
